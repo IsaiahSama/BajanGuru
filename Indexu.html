@@ -1,0 +1,139 @@
+<!Doctype html>
+<html>
+	<head>
+		<title>Raconteur- Demo</title>
+		<link rel = "stylesheet" type = "text/css" href = "Style/Index.css">
+	</head>
+	<body>
+		<!-- Text Area For NPC -->
+		<div style = "float:center;">
+			<i><p id = "talka" style = "display:none;"> </p></i>
+		</div>			
+		<!-- End -->
+			
+		<!--Buttons -->
+		<div>
+			<!--Before Start-->
+			<button id = 'ded' type = "button" style = "display:block;" onclick = "b4type()">Start </button>
+			<!--Second Section-->
+			<button class = "but2" id = "pt2" type = "button" onclick = "wplayer()">Begin Demo</button>
+			<button class = "but2" id = "wru" type = "button" onclick = "tuto1()" onmouseover = "talking1()"> Thanks. But... Who are you?</button>
+			<button class = "but2" id = "wtg" type = "button" onclick = "tuto2()" onmouseover = "talking2()">Nice to meet you... I am Soda. So what do we do first?</button>
+			<button class = "but2" id = "gurus" type = "button" onclick = "guru1()" onmouseover = "talking3()">Oh? Sorry. I'm new here?</button>
+			<button class = "but2" id = "gurus1" type = "button" onclick = "guru1a()" onmouseover = "talking4()">Ok... Where are they?</button>
+			<button class = "but2" id = "gurus2" type = "button" onclick = "guru2()" onmouseover = "talking5()">ERROL!? Are you here?</button>
+			<button class = "but2" id = "gurus3" type = "button" onclick = "guru3()" onmouseover = "talking6()">Yea... Mother Sally said you would teach me more about Barbados?</button>
+			<button class = "but2" id = "gurus4" type = "button" onclick = "guru4()" onmouseover= 'talking7()'>Who are you exactly?</button>
+			<button class = "but2" id = "gurus5" type = "button" onclick = "guru5()" onmouseover = "talking8()">Oh-okay...? Such as?</button>
+			<button class = "but2" id = "gurus6" type = "button" onclick = "guru6()" onmouseover = "talking9()">...</button>
+			<div class = "flexme">
+			<button class = "respchk" id = "respy" type = "button" onclick = "sisir()">Yes sir</button>
+			<button class = "respchk" id = "respn" type = "button" onclick = "nosir()">How about... No?</button>
+			</div>
+		</div>
+		<!-- Loading-->
+		<div style = "float:right;">
+			<p id = "loadtxt" style = "display:none;">Loading...</p>
+		</div>
+			<img class = "hiddenimg" id = "loading" src = "divmage/loading.png">
+		</div>
+		<!--End Loading-->
+		
+		<!-- Images -->
+		<div>
+			<img class = "hiddenimg" id = "lship" src = "divmage/lship.gif">
+			<img class = "hiddenimg" id = "msally" src = "divmage/msally.jpg">
+			<img class = "hiddenimg" id = "msally1" src = "divmage/KayakSally.png">
+			<img class = "hiddenimg" id = "busstand" src = "divmage/vstand.jpg">
+			<img class = "hiddenimg" id = "indepsqr" src = "divmage/indesqr.jpg">
+			<img class = "hiddenimg" id = "bstreet" src = "divmage/bstreet.jpg">
+			<img class = "hiddenimg" id = "rumshop" src = "divmage/rumshop.jpg">
+			<img class = "hiddenimg" id = "guruman" src = "divmage/Guru.jpg">
+			<img class = "hiddenimg" id = "guru2" src = "divmage/Guru2.jpg">
+		</div>
+		<!-- IMAGES END-->
+		
+		<!--Audio Files-->
+		<div>
+			<!--First Part -->
+			<audio id = "yow">
+				<source src = "sfx/intro.m4a" type = "audio/mpeg">
+			</audio>
+			<audio id = "vanvibe">
+				<source src= "sfx/vanting.mp3" type = "audio/mpeg">
+			</audio>
+			<audio id = "bgvn">
+				<source src = "sfx/bgtk.mp3" type = "audio/mpeg">
+			</audio>
+			<audio id = "heyyou">
+				<source src = "sfx/Hey You!.m4a" type = "audio/mpeg">
+			</audio>
+			<audio id = 'play1'>
+				<source src = "sfx/player 1.mp3" type = "audio/mpeg">
+			</audio>
+			<audio id = 'play2'>
+				<source src = "sfx/player 2.mp3" type = "audio/mpeg">
+			</audio>
+			<audio id = 'play3'>
+				<source src = "sfx/player 3.mp3" type = "audio/mpeg">
+			</audio>
+			<audio id = 'play4'>
+				<source src = "sfx/player 4.mp3" type = "audio/mpeg">
+			</audio>
+			<audio id = 'play5'>
+				<source src = "sfx/player 5.mp3" type = "audio/mpeg">
+			</audio>
+			<audio id = 'play6'>
+				<source src = "sfx/player 6.mp3" type = "audio/mpeg">
+			</audio>
+			<audio id = 'play7'>
+				<source src = "sfx/player 7.mp3" type = "audio/mpeg">
+			</audio>
+			<audio id = 'play8'>
+				<source src = "sfx/player 8.mp3" type = "audio/mpeg">
+			</audio>
+			<audio id = 'play9'>
+				<source src = "sfx/player 9.mp3" type = "audio/mpeg">
+			</audio>
+			<audio id = "mud1">
+				<source src = "sfx/mudda1.mp3" type = "audio/mpeg">
+			</audio>
+			<audio id = "mud2">
+				<source src = "sfx/mudda2.mp3" type = "audio/mpeg">
+			</audio>
+			<audio id = 'mud3'>
+				<source src = "sfx/mudda3.mp3" type = "audio/mpeg">
+			</audio>
+			<audio id = "mud4">
+				<source src = "sfx/mudda4.mp3" type = "audio/mpeg">
+			</audio>
+			<audio id = 'mud5'>
+				<source src = "sfx/mudda5.mp3" type = "audio/mpeg">
+			</audio>
+			<audio id = "mano1">
+				<source src = "sfx/oman1.mp3" type = 'audio/mpeg'>
+			</audio>
+			<audio id = "mano2">
+				<source src = "sfx/oman2.mp3" type = "audio/mpeg">
+			</audio>
+			<audio id = "mano3">
+				<source src = "sfx/oman3.mp3" type = "audio/mpeg">
+			</audio>
+			<audio id = "mano4">
+				<source src = "sfx/oman4.mp3" type = "audio/mpeg">
+			</audio>
+			<audio id = "mano5">
+				<source src = "sfx/oman5.mp3" type = "audio/mpeg">
+			</audio>
+			<audio id = "mano6">
+				<source src = "sfx/oman6.mp3" type = "audio/mpeg">
+			</audio>
+			<!--End of First Part -->
+		</div>
+	
+	
+	<!--Scripts-->
+	<script src = "Script/typing.js"></script>
+	<script src = "Script/Index.js"></script>
+	<script src = "Script/guru.js"></script>
+	<script src = "Script/func.js"></script>

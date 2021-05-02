@@ -1,0 +1,24 @@
+.lbut{
+	text-align:center;
+	width:400px;
+	height:200px;
+	font-size:42px;
+}
+.qbut{
+	display:flex;
+	flex-direction:row;
+}
+.ptrue{
+	text-align:center;
+	font-size:35px;
+	color:white;
+}
+
+.buttme{
+	width:150px;
+	height:45px;
+	font-size:30px;
+}
+.imtru{
+	display:none;
+}

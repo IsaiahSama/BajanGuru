@@ -1,0 +1,37 @@
+<!Doctype html>
+<html style = "height:100%; width:100%;">
+<head>
+    <title>Demo- Forest</title>
+    <link rel = "stylesheet" type = "text/css" href = "Style/quest.css">
+    <style>
+    #background{
+        background-image: url("divmage/forbg.jpg");
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        width:100%;
+        height:100%;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        }
+    </style>
+</head>
+    
+<body onload = "areachk1()" style="width: 100%; height: 100%; margin: 0; display: flex;">
+    <div id="background">
+        <!-- Text Area-->
+        <div>
+            <p class = "ptrue">Soda:</p>
+            <p class = "ptrue" id = "parea"> </p>
+        </div>
+        <!-- End -->
+        
+        <!--Images-->
+        <div style="display: flex; justify-content: center; margin-bottom: 30px;">
+            <img id = "tac" style = "display:none"src = "divmage/Forestry/tictactoewin.gif">
+        </div>
+    </div>
+
+    <script src = "Script/forest.js"></script>
+</body>
+</html>

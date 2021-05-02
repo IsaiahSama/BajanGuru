@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+<head>
+	<title>Demo- Quest</title>
+	<link rel = "stylesheet" type = "text/css" href = "Style/Index.css">
+</head>
+<body onload = "begin()">
+	<!--End  Game -->
+	<i><u><h1 id = "bai" style = "font-size:60px; color:red; text-align:center; display:none;"> THIS IS THE END OF THE DEMO... LOOKING FOWARD TO WORKING WITH YOU TO MAKE THE FULL GAME BETTER</h1></u></i>
+		
+	<!--Also End Game Done-->
+	
+<div id = "everything">
+	<!-- Text Area -->
+	<p id =  "talka"> </p>
+	<!--End of Text Area-->
+	<!--Functions-->
+		<div>
+			<button type = "button" class = "but2" id = "q1" onclick = "quest1()">A Green Monkey?</button>
+			<button type = "button" class = "but2" id = "q2" onclick = "quest1a()">I see...?</button>
+			<button type = "button" class = "but2" id = "q3" onclick = "quest2()">Do I have a choice?</button>
+			<button type = "button" class = "but2" id = "q4" onclick = "quest3()">Barbados Wildlife Reserve?</button>
+		</div>
+	<!--Function end-->
+	
+	<div class = "flexme">
+		<button type = "button" class = "lbut" id = "stor1" onclick = "reeia()">Yea it was nice</button>
+		<button type = "button" class = "lbut" id = "stor2" onclick = "reeib()">No... Not at all</button>
+	</div>
+	<!-- Loading-->
+		<div style = "float:right;">
+			<p id = "loadtxt" style = "display:none;">Loading...</p>
+		</div>
+			<img class = "hiddenimg" id = "loading" src = "divmage/loading.png">
+		</div>
+	<!--End Loading-->
+		<!-- Images-->
+		<div>
+		<img id = "guruman" class = "hiddenimg" src = "divmage/Guru.jpg">
+		<img id = "gurutru" class = "hiddenimg" src = "divmage/Guru2.jpg">
+		<img id = "sadgurut" class = "hiddenimg" src = "divmage/sadguru.jpg">
+		<img id = "wlres" class = "hiddenimg" src = "divmage/bdoswlres.jpg">
+		<img id = "bgfor" class = "hiddenimg" src = "divmage/forbg.jpg">
+		</div>
+		<!--End IMages-->
+		<!-- Audio-->
+		<audio id = "vanvibe">
+			<source src= "sfx/vanting.mp3" type = "audio/mpeg">
+		</audio>
+		<!--Done-->
+
+</div>
+</body>
+<script src = "Script/quest.js"></script>
+<script src = "Script/func.js"></script>
+</html>
